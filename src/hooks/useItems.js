@@ -7,7 +7,6 @@ const useItems = () => {
 
     //fetch items from api
     useEffect(() => {
-        console.log("test");
         fetch("https://fakestoreapi.com/products/")
             .then((res) => {
                 if (res.status >= 400) {
@@ -16,7 +15,6 @@ const useItems = () => {
                 return res.json();
             })
             .then((items) => {
-                console.log(items);
                 setProducts(items);
             })
             .catch(() => setIsError(true))
