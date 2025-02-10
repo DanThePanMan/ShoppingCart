@@ -13,7 +13,9 @@ const Home = () => {
         <>
             <Navbar cartCount={cart.length} />
             <CategorySelect setCategory={setCategory} />
-            <ProductList category={category} />
+            <div className="flex flex-row justify-center">
+                <ProductList category={category} />
+            </div>
         </>
     );
 };

@@ -16,7 +16,7 @@ const Item = (props) => {
     };
 
     return (
-        <div className="flex flex-col shadow-sm p-6 w-60 rounded-md gap-2 hover:bg-gray-100 transition-colors ease-in-out">
+        <div className="flex flex-col shadow-sm p-6 w-80 rounded-md gap-2 hover:bg-gray-100 transition-colors ease-in-out">
             <img className="w-48 h-64 object-contain" src={img}></img>
             <p className="text-xl font-bold">${price}</p>
             <p>{name}</p>

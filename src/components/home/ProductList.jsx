@@ -12,7 +12,7 @@ const ProductList = (props) => {
         return <div>Error loading the page</div>;
     } else {
         return (
-            <div className="flex flex-row flex-wrap gap-4 p-2">
+            <div className="flex flex-row flex-wrap gap-4 p-2 w-[80vw] justify-between ">
                 {products.map((product) => {
                     if (product.category === category || category === "all") {
                         return (
